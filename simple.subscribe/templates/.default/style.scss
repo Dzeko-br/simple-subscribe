@@ -1,0 +1,32 @@
+.subscribe {
+
+    &__form-control {
+        &.error {
+            border-color: rgb(184, 17, 17);
+        }
+    }
+
+    .form-label-error {
+        display: none;
+    }
+
+    &__message {
+        position: relative;
+
+        @media (max-width: 767px) {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        &--success {
+            &:before {
+                content: "";
+                background: url("data:image/svg+xml,%3Csvg width='32' height='28' viewBox='0 0 32 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.0787 0.642849C24.0734 -0.6526 20.6219 0.0425191 18.2782 2.43331C17.5089 3.21268 16.7601 4.01839 16.0011 4.81356C15.2421 4.01839 14.4933 3.21268 13.724 2.43331C11.3803 0.047785 7.92883 -0.647334 4.92351 0.642849C-0.328087 2.90199 -1.68202 9.86371 2.34387 14.0028C5.69279 17.4468 9.0571 20.875 12.4163 24.3085L16.0011 28L19.5859 24.3085C22.9451 20.875 26.3094 17.4468 29.6584 14.0028C33.6791 9.86371 32.3303 2.90199 27.0787 0.642849Z' fill='%23313131'/%3E%3C/svg%3E%0A") center/contain no-repeat;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
